@@ -122,7 +122,7 @@ contract NFT is ERC721Enumerable, Ownable {
     // This will pay Genfty.com 5% of the initial sale.
     // You can remove this if you want, or keep it in to support Genfty.com.
     // =============================================================================
-    (bool hs, ) = payable(0x62c14c84Fd325d26830BE5849a5c794fdE44bdAf).call{value: address(this).balance * 5 / 100}("");
+    (bool hs, ) = payable(0xF58D90984b6b75E7AF782Db6D91Df00176b5A00f).call{value: address(this).balance * 5 / 100}("");
     require(hs);
     // =============================================================================
     
