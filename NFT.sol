@@ -23,14 +23,14 @@ contract NFT is ERC721Enumerable, Ownable {
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = 0 ether;
-  uint256 public maxSupply = 9;
-  uint256 public maxMintAmount = 9;
+  uint256 public cost = 0.005 ether;
+  uint256 public maxSupply = 10000;
+  uint256 public maxMintAmount = 100;
   bool public paused = false;
   mapping(address => bool) public whitelisted;
 
-  constructor() ERC721("NFT Collection", "NFTC") {
-    setBaseURI("https://cloud.genfty.com/ipfs/QmXXHMADdTLhhouyACeqwEK4FyGeET7ZQq1RCYN1tsP3qC/");
+  constructor() ERC721("NFT Collection", "NFT") {
+    setBaseURI("https://cloud.genfty.com/ipfs/QmPkzbWtHYShADfa2QC8y1kWjY3y1vJgzWdMz2uUgwLbyg/");
     mint(msg.sender, 100);
   }
 
