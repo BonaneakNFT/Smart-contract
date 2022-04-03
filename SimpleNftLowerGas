@@ -33,7 +33,7 @@ contract SimpleNftLowerGas is ERC721, Ownable {
   
   uint256 public cost = 0.01 ether;
   uint256 public maxSupply = 10000;
-  uint256 public maxMintAmountPerTx = 50;
+  uint256 public maxMintAmountPerTx = 5;
 
   bool public paused = true;
   bool public revealed = false;
